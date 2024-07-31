@@ -2,15 +2,15 @@
 This mod sends POST requests with a JSON body to the url defined in the configuration, when:
 * the server is started and ready for connections
 ```
-{"Event":"ServerStarted"}
+{"Event":"ServerStarted","ServerName":"Example","WorldName":"Example"}
 ```
 * players connect
 ```
-{"Event":"PeerConnected","UserId":"<SteamId>"}
+{"Event":"PeerConnected","ServerName":"Example","WorldName":"Example","UserName":"Example"}
 ```
 * players disconect
 ```
-{"Event":"PeerDisconnected","UserId":"<SteamId>"}
+{"Event":"PeerDisconnected","ServerName":"Example","WorldName":"Example","UserName":"Example"}
 ```
 # Installation
 1. Install the BepInEx mod loader
